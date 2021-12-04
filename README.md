@@ -1,7 +1,7 @@
 # GraspNet_Handover_Pytorch
 
 Here is the work to use FCN model to predict a "grasp point" by Pytorch .<br>
-inference : [Robotic Pick-and-Place of Novel Objects in Clutter](https://arxiv.org/pdf/1710.01330.pdf)
+reference : [Robotic Pick-and-Place of Novel Objects in Clutter](https://arxiv.org/pdf/1710.01330.pdf)
 
 ![Teaser](figure/demo.png)
 
