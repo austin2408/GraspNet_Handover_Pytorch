@@ -8,6 +8,8 @@ reference : [Robotic Pick-and-Place of Novel Objects in Clutter](https://arxiv.o
 Two stream FCN model (backbone : ResNet101)<br>
 ![Teaser](figure/model.png)
 
+[DATASETS](https://drive.google.com/file/d/13vRFPhruy37sk3Tzo4Z6dyw--TFWSIuH/view?usp=sharing)
+
 # How to use
 
 ## I. Get image data from rosbags
