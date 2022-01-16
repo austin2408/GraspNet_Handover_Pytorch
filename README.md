@@ -1,11 +1,11 @@
 # GraspNet_Handover_Pytorch
 
-Here is the work to use FCN model to predict a "grasp point" by Pytorch .<br>
+Here is the work to use FCN base model to predict a "grasp point" by Pytorch , which named it "HANet"(Handover Affordance Network).<br>
 reference : [Robotic Pick-and-Place of Novel Objects in Clutter](https://arxiv.org/pdf/1710.01330.pdf)
 
 ![Teaser](figure/demo.png)
 
-Two stream FCN model (backbone : ResNet101)<br>
+HANet (backbone : ResNet101)<br>
 ![Teaser](figure/model.png)
 
 [DATASETS](https://drive.google.com/file/d/13vRFPhruy37sk3Tzo4Z6dyw--TFWSIuH/view?usp=sharing)
