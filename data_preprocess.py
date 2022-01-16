@@ -1,9 +1,6 @@
 import cv2
 import numpy as np
-import matplotlib.pyplot as plt
-import math
-from skimage.draw import polygon
-from skimage.feature import peak_local_max
+import pandas as pd
 import torch.nn.functional as F
 import json
 import os
@@ -33,9 +30,11 @@ for name in File:
   label = np.zeros((256,256,3))
   with open(args.data_dir+'/json'+'/'+name,"r") as f:
     data = json.load(f)
-    for i in range(len(data['shapes'])):
-      coord = data['shapes'][i]['points']
-      if data['shapes'][i]['label'] == 'good':
+    points_list = pd.DataFrame(data['shapes'])
+
+    for i in range(points_list.shape[0]):
+      coord = points_list['points'][i]
+      if points_list['label'][i] == 'good':
         cv2.line(label, (int(coord[0][0]), int(coord[0][1])), (int(coord[1][0]), int(coord[1][1])), (0,255,0),2)
 
   cv2.imwrite(args.data_dir+'/label/label_'+name.split('.')[0].split('_')[1]+'.jpg', label[:,:,[2,1,0]])
