@@ -60,10 +60,7 @@ for bagname in os.listdir(path):
     img = np.round((img/np.max(img))*255).astype('int').reshape(args.height, args.width)
     img = np.uint8(img)
     if args.depth_filter == True:
-      for i in range(img.shape[0]):
-        for j in range(img.shape[1]):
-          if img[i,j] > 100:
-            img[i,j] = 0
+      img[img>100] = 0
       img = cv2.erode(img, kernel, iterations = 1)
     img = img.reshape(img.shape[0], img.shape[1])
     Depth.append(img)
