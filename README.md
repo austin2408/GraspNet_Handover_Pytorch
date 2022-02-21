@@ -32,6 +32,7 @@ $ python3 train.py --data_dir="your own path"
 ```
 # Demo
 With ViperX300s Robotic Arm
+
 https://user-images.githubusercontent.com/60026936/154895113-2648259e-b298-4eec-999f-f40f2f75b43a.mp4
 
 
